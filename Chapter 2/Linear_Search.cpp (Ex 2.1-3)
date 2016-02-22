@@ -1,4 +1,4 @@
-//Linear Search
+//Linear Search - This searching procedure searches the entire list, element by element, from left to right.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,4 +27,5 @@ else{
  cout<<"\n"<<Lsearch(ar,size,ele);  
  return 0;
  }
- // loop invariant: At the start of each iteration of the while loop, the subarray ar[0..i-1] does not contain the element ele 
+ /* loop invariant: At the beginning of each iteration of the while loop, 
+ ** the subarray ar[0..i-1] does not contain the element 'ele' in it. */ 
