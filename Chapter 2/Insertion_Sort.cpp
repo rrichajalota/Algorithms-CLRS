@@ -1,14 +1,13 @@
-//insertion sort on array
-
+//insertion sort on an array- basic implementation 
 #include <bits/stdc++.h>
 using namespace std;
 
 void isort(int ar[]){
 	int i,j;
-	for (j=1; j< 10; j++){
+	for (j=1; j< 10; j++){                  
 	  int key= ar[j];
 	  i= j-1;
-	  while(i >-1 && ar[i]>key){
+	  while(i >-1 && ar[i]>key){            
 	    ar[i+1]= ar[i];
 	    i=i-1;
 	  }
