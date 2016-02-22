@@ -95,4 +95,4 @@ void insertionSort(int *ar, int beg, int end){
  }
 }
 /* a) Insertion sort takes theta of (k^2) time to sort one sublist. Thus to sort n/k sublists it takes theta of (nk) time. {as k^2 * n/k = nk}.
-** b) The merge procedure takes theta of n time to merge a sublist. */
+** b) The merge procedure takes theta of n time to merge a sublist. */ 
