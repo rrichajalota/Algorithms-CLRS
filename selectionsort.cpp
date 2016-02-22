@@ -1,0 +1,40 @@
+//selection sort
+#include <bits/stdc++.h>
+using namespace std;
+
+void SelectionSort(int *ar, int size){
+ int i,j,smallest;
+ for(j=0; j<size-1; j++){
+  smallest= j;
+  for(i=j+1; i<size; i++){
+   if(ar[i]< ar[smallest])
+     smallest=i;
+  }
+  int temp= ar[j];
+  ar[j]=ar[smallest];
+  ar[smallest]= temp;
+ }
+}
+
+int main() {
+    int size,i;
+    int *ar;
+    cin>>size;
+    ar= new (nothrow) int[size];  // dynamically create an array
+    if (ar== NULL)
+      return 0;
+    else{
+    for (i=0; i<size; i++)
+     cin>>ar[i];
+    }
+    
+    SelectionSort(ar,size);
+    cout<<endl;
+    for (i= 0; i< size; i++)
+       cout<<ar[i]<<" ";  
+	return 0;
+}
+/* at the beginning of each loop, the subarray ar[0..j-1] contains the smallest elements of the array ar[0..size-1] in sorted order. 
+** when j= size-1, ar[0...size-2] contains the smallest elements of ar[0..size-1]. there is only 1 element left in the array ar[size-1]
+** which is obviously sorted and the largest of all. Thus, the j-for-loop runs only for first size-1 elements. 
+*/
