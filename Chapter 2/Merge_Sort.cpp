@@ -1,4 +1,6 @@
-// merge sort
+// merge sort- basic implementation
+/* This sorting procedure follows the divide and conquer paradigm, and thus sorts the list recursively. 
+** It has a time complexity of O(n*Logn) and space complexity of O(n) */
 #include <bits/stdc++.h>
 using namespace std;
 
