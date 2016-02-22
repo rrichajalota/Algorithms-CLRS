@@ -1,6 +1,7 @@
 /*Selection Sort- This sorting algorithm works on indices. Therefore, whether it's the best-case input (already sorted array) 
 ** or worst-case input (reverse sort array), the number of comparisons are the same. 
-** Time complexity - Theta of (n^2) */
+** Time complexity - Theta of (n^2) 
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
