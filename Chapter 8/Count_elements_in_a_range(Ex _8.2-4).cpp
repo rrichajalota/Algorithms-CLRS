@@ -1,6 +1,7 @@
 /* Given n integers in the range 0 to k, how many integers fall into a range [a,..,b] in O(1) time. 
 ** Our algorithm should use theta of (n+k) preprocessing time.
 ** Solution : We use counting sort mechanism as our preprocessing algorithm.
+** Eg. given {4,3,0,6,0,7,2,1,4} we need to find number of elements between 2 and 4. Expected Result: 4.
 */
 #include <iostream>
 using namespace std;
@@ -41,7 +42,7 @@ int count(int *ar, int size, int k, int a, int b){
 	  for (j=0 ; j < size; j++)  //store the number of occurrences of the elements of ar[] in c[]
       c[ar[j]] = c[ar[j]]+1;
 
-    d[0] = c[0];                   //the d[] array stores the number of elements greater than or equal to    
+    d[0] = c[0];                   //the d[] array stores the number of elements lesser than or equal to    
     for ( i= 1; i<=k ; i++)       //the index i 
       d[i]= c[i]+d[i-1];
 
